@@ -1,0 +1,54 @@
+<!-- Write XSLT styles-sheet to convert XML document to HTML using xsl template -->
+
+<!-- XSLT - Transformation -->
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+or:
+<xsl:transform version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<!-- Transforming XML with XSLT on the Server -->
+<?xml version="1.0"?>
+<?xml-stylesheet type= "text/xsl"  href="p1.xsl"?>
+<class>	
+	<student roll="1">
+		<name> Ken</name>
+		<age>26</age>
+		<address>pune</address>5
+		<subject>maths</subject>
+	</student>
+	<student roll="2">
+		<name>Boris</name>
+		<age>23</age>
+		<address>kothrud</address>
+</student>	
+</class>
+
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<xsl:for-each select="class">
+ <xsl:apply-templates select="student" />
+ </xsl:for-each>
+ </xsl:template>
+<xsl:template match="student">
+<p>
+ <xsl:value-of select="@roll" />
+ </p>
+<p><b>
+ <xsl:value-of select="name" />
+ </b>
+ </p>
+<p>
+<i>
+ <xsl:value-of select="age" />
+ </i>
+ </p>
+<p>
+<u>
+ <xsl:value-of select="subject" />
+ </u>
+ </p>
+ </xsl:template>
+  </xsl:stylesheet>
+
