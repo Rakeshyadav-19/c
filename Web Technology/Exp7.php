@@ -13,6 +13,7 @@
 <?php
     $x = 5;
     function myTest() {
+        $x = 7;
         echo "<p>Variable x inside function is: $x</p>";
     }
     myTest();
@@ -22,17 +23,17 @@
 
 <?php
      $d =date("D");
-if($d =="Fri")
-echo"Have a nice weekend!";
-else
-echo"Have a nice day!";
+    if($d =="Fri")
+        echo"Have a nice weekend!";
+    else
+        echo"Have a nice day!";
 ?>
 
 <?php
     $array =array(1,2,3,4,5);
-foreach( $array as $value ){
-echo"Value is $value <br/>";
-}
+    foreach( $array as $value ){
+        echo"Value is $value <br/>";
+    }
 ?>
 
 <?php
@@ -84,15 +85,15 @@ echo"Value is $value <br/>";
         echo "$n <br/>";
         $n++;
     }
-    ?>
+?>
 
-    <?php
+<?php
     $n = 1;
     do {
         echo "$n <br/>";
         $n++;
     } while ($n <= 5);
-    ?>
+?>
 
 <?php
     for ($i = 1; $i<= 5; $i++) {
@@ -108,7 +109,7 @@ echo"Value is $value <br/>";
         echo "$i<br/>";
     }
     echo "Loop is Over !";
-    ?>
+?>
 
 <?php
     for ($i = 1; $i<= 10; $i++) {
@@ -118,13 +119,13 @@ echo"Value is $value <br/>";
         echo "$i<br/>";
     }
     echo "Loop is Over !";
-    ?>
+?>
 
 
 <?php
     $marks = array(60, 78, 87, 67);
     echo "Marks are: $marks[0], $marks[1], $marks[2], and $marks[3]";
-    ?>
+?>
 
 <?php
     $marks = array("WT" => 56, "FLAT" => 67, "SE" => 65, "PPL" => 78);
@@ -132,7 +133,7 @@ echo"Value is $value <br/>";
     echo "Marks of FLAT: " . $marks["FLAT"] . "<br/>";
     echo "Marks of SE: " . $marks["SE"] . "<br/>";
     echo "Marks of PPL: " . $marks["PPL"] . "<br/>";
-    ?>
+?>
 
 
 <?php
@@ -147,5 +148,5 @@ echo"Value is $value <br/>";
         }
         echo "<br/>";
     }
-    ?>
+?>
 
