@@ -12,3 +12,8 @@
         <phone>(022) 987-6543</phone>
     </address>
 </addresses>
+
+<!-- 
+To Create output
+xsltproc address.xsl address.xml -o output.html
+ -->

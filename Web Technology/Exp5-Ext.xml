@@ -5,3 +5,6 @@
     <company>BRAND</company>
     <phone>7</phone>
 </Exp5-Ext>
+
+<!-- To Validate
+xmllint --noout --valid Exp5-Ext.xml -->
