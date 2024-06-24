@@ -1,0 +1,4 @@
+<!ELEMENT Exp5-Ext (name,company,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
