@@ -2,26 +2,16 @@
 <?php
 // start a session
 session_start();
-  // manipulate session variables
-?>
-
-
-<!-- Automatically Start a Session -->
-session.auto_start = 1
-
-<!--  Get a Session Id -->
-<?php
-session_start();
-echosession_id();
+//Get a Session Id
+echo session_id();
 ?>
 
 <?php
-session_id(YOUR_SESSION_ID);
+//session_id(0tjcc2fg5m30mhjhm3hrcdte5e);
 session_start();
 ?>
 
 <!--  initialize session variables. -->
-
 <?php
 // start a session
 session_start();
