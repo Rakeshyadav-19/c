@@ -1,3 +1,15 @@
+<!-- CREATE DATABASE test_db;
+
+USE test_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
+ -->
+
 <?php
 	$servername = "localhost";
 	$username = "root";
