@@ -1,20 +1,46 @@
 <?php
-		$dbhost = 'localhost:3036';
-		$dbuser = 'root';
-		$dbpass = 'rootpassword';
-		$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+	$servername = "localhost";
+	$username = "root";
+	$password = "cloud123";
+	$dbname = "test_db";
 
-		if(! $conn ) {
-		die('Could not connect: ' . mysql_error());
-		}
-		 $sql = 'INSERT INTO employee '.
-			'(emp_name,emp_address, emp_salary, join_date) '.
-			'VALUES ( "guest", "XYZ", 2000, NOW() )';
-		mysql_select_db('test_db');
-		$retval = mysql_query( $sql, $conn );
-		if(! $retval ) {
-			die('Could not enter data: ' . mysql_error());
-		}
-		echo "Entered data successfully\n";
-		mysql_close($conn);
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+
+	// Check connection
+	if ($conn->connect_error) {
+    	
+	die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $age = $_POST['age'];
+
+    $sql = "INSERT INTO users (name, email, age) VALUES ('$name', '$email', $age)";
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create User</title>
+</head>
+<body>
+    <h2>Create User</h2>
+    <form method="post" action="">
+        Name: <input type="text" name="name" required><br>
+        Email: <input type="email" name="email" required><br>
+        Age: <input type="number" name="age" required><br>
+        <input type="submit" value="Create">
+    </form>
+    <a href="index.php">Back to Home</a>
+</body>
+</html>
+
