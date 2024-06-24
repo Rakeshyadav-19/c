@@ -1,15 +1,3 @@
-<!-- CREATE DATABASE test_db;
-
-USE test_db;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    age INT NOT NULL
-);
- -->
-
 <?php
 	$servername = "localhost";
 	$username = "root";
@@ -52,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         Age: <input type="number" name="age" required><br>
         <input type="submit" value="Create">
     </form>
-    <a href="index.php">Back to Home</a>
 </body>
 </html>
 
