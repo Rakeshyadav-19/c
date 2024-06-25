@@ -8,12 +8,12 @@
             },
             "previewLimit": 50,
             "server": "localhost",
-            "port": "***",
+            "port": 33060,
             "driver": "MySQL",
             "name": "localhost",
-            "database": "****",
-            "username": "***",
-            "password": "****",
+            "database": "",
+            "username": "root",
+            "password": "",
             "connectionTimeout": 50
         }
     ]

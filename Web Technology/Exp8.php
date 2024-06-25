@@ -21,7 +21,7 @@
 ?>
 
 <h2>PHP Form Validation Example</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         Name: <input type="text" name="name"><br><br>
         E-mail: <input type="text" name="email"><br><br>
         Website: <input type="text" name="website"><br><br>

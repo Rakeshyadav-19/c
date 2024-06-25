@@ -5,6 +5,8 @@
     <company>BRAND</company>
     <phone>7</phone>
 </Exp5-Ext>
+<!-- USE WEBSITE: -->
+<!-- https://www.xmlvalidation.com/ -->
 
-<!-- To Validate
-xmllint --noout --valid Exp5-Ext.xml -->
+
+<!-- To Validate xmllint -noout -valid Exp5-Ext.xml -->

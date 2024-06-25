@@ -8,32 +8,20 @@
         $conn = new mysqli($servername, $username, $password, $dbname);
 
         // Check connection
-        if ($conn->connect_error) {
+        if ($conn->connect_error) 
+        {
+            die("Connection failed: " . $conn->connect_error);
+        }
 
-        die("Connection failed: " . $conn->connect_error);
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $age = $_POST['age'];
-
-    $sql = "INSERT INTO users (name, email, age) VALUES ('$name', '$email', $age)";
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-}
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Read Users</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <h2>User List</h2>
