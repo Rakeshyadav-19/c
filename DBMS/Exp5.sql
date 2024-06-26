@@ -1,6 +1,9 @@
 -- implementation of Data Manipulation Language (DML) Queries.
+CREATE DATABASE DBMS;
 
 USE DBMS;
+
+CREATE TABLE Student (Roll_No, First_Name, Last_Name, Age, Marks);
 
 -- INSERT:
 INSERT INTO Student (Roll_No, First_Name, Last_Name, Age, Marks) 
