@@ -1,7 +1,7 @@
 -- implement Triggers.
-use dbms
+use DBMS;
 
-CREATE TABLE Students2(
+CREATE TABLE Student2(
     tid INT(4) PRIMARY KEY,
     name varchar(30),
     sub1 int(2),
@@ -20,9 +20,9 @@ CREATE TABLE Students2(
 
 CREATE TRIGGER stud_marks 
 BEFORE INSERT
-ON Students2
+ON Student2
 FOR EACH ROW
 SET NEW.total = NEW.sub1 + NEW.sub2 + NEW.sub3, NEW.per = (NEW.sub1 + NEW.sub2 + NEW.sub3) * 60 / 100;
 
 
-INSERT INTO Students2 values(0, "ABCDE", 20, 20, 20, 0, 0);
+INSERT INTO Student2 values(0, "ABCDE", 20, 20, 20, 0, 0);

@@ -1,10 +1,5 @@
 -- implement Functions and Stored Procedures.
 
--- CREATE PROCEDURE procedure_name (parameter1 data_type, parameter2 data_type, …) 
--- AS
--- BEGIN
--- — SQL statements to be executed 
--- END
 
 -- To Execute the procedure
 -- EXEC procedure_name parameter1_value, parameter2_value, ..
@@ -15,6 +10,7 @@ CREATE TABLE Customers(
     ContactName VARCHAR(50),
     Country VARCHAR(50)
 );
+
 INSERT INTO Customers (CustomerID, CustomerName, ContactName, Country) 
 VALUES
     (1, 'Shubham', 'Thakur', 'India'),
@@ -24,11 +20,15 @@ VALUES
     (5, 'Nishant. Salchichas S.A.', 'Jain', 'Spain')
 ;
 
+
+USE DBMS;
 -- Creating a Procedure
-CREATE PROCEDURE GetCustomersByCountry @Country VARCHAR(50)
-AS 
+DELIMITER //
+CREATE PROCEDURE Get_Data()
 BEGIN
-SELECT CustomerName, ContactName
-FROM Customers
-WHERE Country = @Country
-END;
+    SELECT * From Customers WHERE CustomerID = 1;
+END //
+DELIMITER ;
+
+
+CALL Get_Data();
