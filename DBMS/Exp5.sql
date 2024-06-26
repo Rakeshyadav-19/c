@@ -1,21 +1,22 @@
 -- implementation of Data Manipulation Language (DML) Queries.
 
-USE dbms;
+USE DBMS;
 
 -- INSERT:
-INSERT INTO students (Roll_No, fName, Email) 
+INSERT INTO Student (Roll_No, First_Name, Last_Name, Age, Marks) 
     VALUES 
-        (24, "Patil", "dude5057@gmail.com"),
-        (32, "Badkar", "prabhu@gamil.com"),
-        (21, "Patil", "Patil@gmail.com"),
-        (29, "Yadav", "rax@gmail.com")
+        (7, "Thala", "NO", 70, 100),
+        (14, "Rony", "kale",45, 60 ),
+        (21, "Thala", "for reason", 77, 777),
+        (28, "Tony", "Lale", 07, 007)
 ;
 
 -- UPDATE:
-UPDATE students SET Roll_NO = 27 WHERE fName = "Yadav";
+UPDATE Student SET Last_Name = "King" WHERE First_Name = "Thala";
 
 -- DELETE:  (Omit the WHERE clause, delete every row)
-DELETE FROM students WHERE fName = "Yadav";
+DELETE FROM Student WHERE First_Name = "Rony";
 
 -- SELECT:
-Select * from students;
+Select * from Student;
+

@@ -3,29 +3,32 @@
 -- CREATE Command
 Create Database Books;
 
+USE DBMS;
 -- create a new table:
 CREATE TABLE Student(
-    Roll_No. Int ,
+    Roll_No Int (10),
     First_Name Varchar (20) , 
     Last_Name Varchar (20) , 
-    Age Int ,
-    Marks Int ,
+    Age Int (2),
+    Marks Int (3)
 );
 
--- remove a database:
-DROP DATABASE Books;
-
--- remove a table:
-DROP TABLE Student;
 
 -- #ALTER Command:
 
 -- 1.add a newfield in the table:
-ALTER TABLE Student ADD Fathers_Name Varchar(60);
+ALTER TABLE Student 
+ADD column Fathers_Name Varchar(60);
 
 -- 2.remove a column from the table:
-ALTER TABLE Student DROP Age, Marks;
+ALTER TABLE Student DROP Fathers_Name;
 
 -- modify the column of the table:
-ALTER TABLE Students 
-MODIFY column Last_Name varchar(25); 
+ALTER TABLE Student 
+MODIFY column Last_Name varchar(25); --Changes the size of Last_Nmae to 25 from 20
+
+-- remove a table:
+DROP TABLE Student;
+
+-- remove a database:
+DROP DATABASE Books;

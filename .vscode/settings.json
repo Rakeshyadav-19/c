@@ -11,9 +11,9 @@
             "port": 33060,
             "driver": "MySQL",
             "name": "localhost",
-            "database": "",
+            "database": "DBMS",
             "username": "root",
-            "password": "",
+            "password": "cloud123",
             "connectionTimeout": 50
         }
     ]
