@@ -1,7 +1,7 @@
 -- Implementation of Data Definition Language (DDL) Queries.
 
 -- CREATE Command
-Create Database Books;
+Create Database DBMS;
 
 USE DBMS;
 -- create a new table:
