@@ -1,7 +1,7 @@
 <?php
         $servername = "localhost";
         $username = "root";
-        $password = "cloud123";
+        $password = "";
         $dbname = "test_db";
 
         // Create connection

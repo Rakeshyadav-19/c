@@ -13,7 +13,7 @@
             "name": "localhost",
             "database": "DBMS",
             "username": "root",
-            "password": "cloud123",
+            "password": "",
             "connectionTimeout": 50
         }
     ]
