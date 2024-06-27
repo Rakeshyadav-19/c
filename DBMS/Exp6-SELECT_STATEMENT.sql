@@ -28,7 +28,7 @@ FROM Student
 INNER JOIN Teachers
 ON Student.Roll_No =  Teachers.TeacherID;
 
--- 2.Using Sub query:
+-- 2.UsinExp5g Sub query:
 select Roll_No,First_Name
 from Student
 where Roll_No=(select TeacherID from Teachers WHERE TeacherID=7);
