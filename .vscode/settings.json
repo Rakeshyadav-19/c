@@ -11,7 +11,7 @@
             "port": 33060,
             "driver": "MySQL",
             "name": "localhost",
-            "database": "DBMS",
+            "database": "",
             "username": "root",
             "password": "",
             "connectionTimeout": 50
