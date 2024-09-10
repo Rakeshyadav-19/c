@@ -43,7 +43,7 @@ MinMax findMaxMinDivideConquer(int arr[], int low, int high) {
 }
 
 int main() {
-	printf("Shivtej Mahadev Sul(3050)\n");
+	printf("Rakesh Yadav(3049)\n");
     int arr[] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
 

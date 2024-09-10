@@ -59,7 +59,7 @@ void jobSequencing(Job jobs[], int n)
 
 int main()
 {
-    printf("Shivtej Mahadev Sul(3050)");
+    printf("Rakesh Yadav(3049)\n");
     Job jobs[] = {
         {1, 4, 100},
         {2, 1, 19},
