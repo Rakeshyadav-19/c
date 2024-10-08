@@ -13,6 +13,9 @@ int main()
 	int n;
     cout << "Enter a number: ";
     cin >> n; 
-	cout << fib(n);
+	for(int i=0; i<=n; i++){
+		cout << fib(i) << " ";
+	}
+	cout << "\n";
 	return 0; 
 } 
