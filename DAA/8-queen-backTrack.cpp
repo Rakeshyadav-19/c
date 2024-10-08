@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int N = 8;
+const int N = 4;
 
 // Check if it's safe to place a queen at board[row][col]
 bool isSafe(int board[N][N], int row, int col)
